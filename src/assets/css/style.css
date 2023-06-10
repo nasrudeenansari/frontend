@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url("../fonts/Helvetica/FreeSansBold.ttf");
+}
+@font-face {
+  font-family: "Helvetica-Regular";
+  src: url("../fonts//Helvetica/FreeSans.ttf");
+}
+
+:root {
+  --light_theme: #ffffff;
+  --dark_theme: #3339cd;
+  --border-color: #f5f5f5;
+  --active_color: #3c3faa;
+  --light_text: #3d4149;
+  --dark_active: #676ad8;
+}
+body {
+  height: 100vh;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  background: var(--light_theme);
+  width: 100px;
+  position: fixed;
+  height: 100%;
+  padding: 70px 0;
+  box-sizing: border-box;
+  border-right: 1.5px solid var(--border-color);
+}
+
+.sidebar_menu {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+  text-align: center;
+}
+.sidebar .sidebar_menu ul li {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--light_theme);
+  border-radius: 10px;
+  width: 62px;
+  height: 60px;
+  box-sizing: border-box;
+}
+.sidebar .sidebar_menu ul li img {
+  width: 25px;
+}
+.sidebar .sidebar_menu ul li:hover {
+  cursor: pointer;
+  transition: 0.2s all;
+  background: #f1f5fd;
+  border-radius: 10px;
+}
+
+.sidebar .sidebar_menu ul li.active {
+  background: #f1f5fd;
+  border-radius: 10px;
+}
+
+.sidebar .sidebar_menu ul li:hover > img,
+.sidebar .sidebar_menu ul li.active > img {
+  filter: invert(30%) sepia(53%) saturate(1406%) hue-rotate(210deg)
+    brightness(95%) contrast(90%);
+}
+.mani_menu_bottom {
+  width: 80px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 20px 3px rgba(0, 0, 0, 0.04);
+}
+.mani_menu_bottom ul li {
+  border: none !important;
+  margin: 10px auto !important;
+}
+.mani_menu_bottom ul li.active {
+  background: #f9fbfc !important;
+  border: 1px solid #f8f8fa;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+}
+
+.layer_container {
+  padding-top: 30px;
+  padding-left: 140px;
+}
+.layer_container h5 {
+  width: 133px;
+  font-family: "Helvetica-Bold";
+  font-style: normal;
+  height: 15px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: var(--light_text);
+}
+.accordian_title {
+  display: flex;
+  width: 722px;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordian_title img {
+  width: 27px;
+  margin-right: 15px;
+}
+.timer_container img {
+  width: 16.86px;
+}
+
+.timer_container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Helvetica-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 26px;
+  width: 722px;
+  height: 51px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  align-items: center;
+  cursor: pointer;
+  background: #f1f5fd;
+  border-radius: 6px;
+  color: #4b50ba;
+}
+
+.left_timer {
+  display: flex;
+}
+.left_timer p {
+  margin-left: 10px;
+}
+
+.right_timer {
+  height: 27px;
+}
+.right_timer img {
+  width: 27px;
+}
+
+.database_option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 722px;
+  cursor: pointer;
+  margin-top: 15px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.database_name {
+  font-family: "Helvetica-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 15px;
+  color: var(--light_text);
+}
+
+.database_right_img {
+  width: 27px;
+  margin-right: 15px;
+}
+
+.checkbox_wrapper {
+  position: relative;
+  height: 16px;
+  width: 17px;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  height: 16px;
+  width: 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+input[type="checkbox"] + label {
+  background: url("../../assets/images/checkbox.svg") no-repeat;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+input[type="checkbox"]:checked + label {
+  background: url("../../assets/images/checkbox_checked.svg") no-repeat;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+.database_list {
+  width: 722px;
+  padding-left: 75px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: none;
+  box-sizing: border-box;
+}
+.database_list li {
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+.database_list.active {
+  display: block;
+}
+.timer_list {
+  display: none;
+}
+.timer_list.active {
+  display: block;
+}
+
+.optionsName {
+  margin-top: 5px;
+  font-family: "Helvetica-Regular" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--light_text);
+}
+
+/*Style for Dark-mode*/
+.dark-mode,
+.dark-mode .sidebar {
+  background: var(--dark_theme);
+  border-color: var(--dark_active);
+}
+.dark-mode img {
+  filter: invert(100%) sepia(98%) saturate(52%) hue-rotate(213deg)
+    brightness(153%) contrast(108%);
+}
+.dark-mode .optionsName,
+.dark-mode .database_name,
+.dark-mode .timer_container,
+.dark-mode .layer_container h5 {
+  color: var(--light_theme);
+}
+
+.dark-mode .timer_container {
+  background-color: var(--dark_active);
+}
+
+.dark-mode .sidebar .sidebar_menu ul li {
+  background: none;
+  border: 1px solid var(--dark_theme);
+}
+
+.dark-mode .sidebar .sidebar_menu ul li:hover {
+  background: var(--dark_active);
+  border: 1px solid #8d8ef9;
+}
+.dark-mode .sidebar .sidebar_menu ul li.active {
+  background: var(--dark_active);
+  border: 1px solid #8d8ef9;
+}
+.dark-mode .sidebar .sidebar_menu ul li:hover > img,
+.dark-mode .sidebar .sidebar_menu ul li.active > img,
+.dark-mode input[type="checkbox"] + label {
+  filter: invert(100%) sepia(98%) saturate(52%) hue-rotate(213deg)
+    brightness(153%) contrast(108%);
+}
+.dark-mode .mani_menu_bottom {
+  border: 1px solid #8d8ef9 !important;
+}
+.dark-mode .mani_menu_bottom ul li.active {
+  background: var(--dark_active) !important;
+  border: 1px solid #8d8ef9 !important;
+}
