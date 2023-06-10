@@ -44,7 +44,7 @@ const Layer = () => {
   };
 
   useEffect(() => {
-    getData();
+    // getData();
   }, []);
   return (
     <div className="layer_container">
