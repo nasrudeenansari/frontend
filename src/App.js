@@ -6,11 +6,14 @@ import Layer from "./components/layer";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Sidebar />}>
-        <Route index element={<Layer />} />
-      </Route>
-    </Routes>
+    <>
+      <h1>website</h1>
+      {/* <Routes>
+        <Route path="/" element={<Sidebar />}>
+          <Route index element={<Layer />} />
+        </Route>
+      </Routes> */}
+    </>
   );
 }
 
