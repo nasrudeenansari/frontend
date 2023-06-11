@@ -2,7 +2,7 @@ import axios from "axios";
 
 //API url
 
-let apiUrl = "http://localhost:3001/api/data";
+let apiUrl = "https://unoiatech-api-nasrudeenansari.onrender.com/api/data";
 export const fetchData = () => {
   return new Promise(async (resolve, reject) => {
     try {
