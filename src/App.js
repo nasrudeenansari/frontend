@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route element={<Sidebar />}>
+        <Route path="/" element={<Sidebar />}>
           <Route index element={<Layer />} />
         </Route>
       </Routes>
