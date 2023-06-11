@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frontend/static/css/main.ffdb834b.css",
-    "main.js": "/frontend/static/js/main.c40c2744.js",
+    "main.js": "/frontend/static/js/main.6dfd9277.js",
     "static/media/FreeSans.ttf": "/frontend/static/media/FreeSans.028215fb03f453e38eed.ttf",
     "static/media/FreeSansBold.ttf": "/frontend/static/media/FreeSansBold.974eea1b945ddbbafb86.ttf",
     "static/media/layer.svg": "/frontend/static/media/layer.971ed178b7745a7e67519738158fd442.svg",
@@ -17,10 +17,10 @@
     "static/media/checkbox.svg": "/frontend/static/media/checkbox.b571b80559963063f6a9.svg",
     "static/media/dark.svg": "/frontend/static/media/dark.a537386d88a2d000c0c316008e27ffc6.svg",
     "main.ffdb834b.css.map": "/frontend/static/css/main.ffdb834b.css.map",
-    "main.c40c2744.js.map": "/frontend/static/js/main.c40c2744.js.map"
+    "main.6dfd9277.js.map": "/frontend/static/js/main.6dfd9277.js.map"
   },
   "entrypoints": [
     "static/css/main.ffdb834b.css",
-    "static/js/main.c40c2744.js"
+    "static/js/main.6dfd9277.js"
   ]
 }
