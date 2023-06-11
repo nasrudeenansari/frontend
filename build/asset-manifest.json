@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Unoiatech-task/static/css/main.615b4214.css",
+    "main.js": "/Unoiatech-task/static/js/main.88fed07b.js",
+    "static/media/FreeSans.ttf": "/Unoiatech-task/static/media/FreeSans.028215fb03f453e38eed.ttf",
+    "static/media/FreeSansBold.ttf": "/Unoiatech-task/static/media/FreeSansBold.974eea1b945ddbbafb86.ttf",
+    "static/media/layer.svg": "/Unoiatech-task/static/media/layer.971ed178b7745a7e67519738158fd442.svg",
+    "static/media/light.svg": "/Unoiatech-task/static/media/light.f78526ac39c541161c29dc091616c239.svg",
+    "static/media/database.svg": "/Unoiatech-task/static/media/database.12b0e8351f3330d47662b1975379e590.svg",
+    "static/media/logo.svg": "/Unoiatech-task/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/timer.svg": "/Unoiatech-task/static/media/timer.3832db3d9d432a8efb4303ff050d5e6d.svg",
+    "static/media/checkbox_checked.svg": "/Unoiatech-task/static/media/checkbox_checked.94a9b61530bd58c8903e.svg",
+    "static/media/minus_gray.svg": "/Unoiatech-task/static/media/minus_gray.90e3d5e6703d84cbefe2b115a3daeb4e.svg",
+    "static/media/minus.svg": "/Unoiatech-task/static/media/minus.0b5439d15a45a8c39c5465dd20a41aba.svg",
+    "index.html": "/Unoiatech-task/index.html",
+    "static/media/home.svg": "/Unoiatech-task/static/media/home.36e2b741281fcc1d071d1e2a70f21777.svg",
+    "static/media/checkbox.svg": "/Unoiatech-task/static/media/checkbox.b571b80559963063f6a9.svg",
+    "static/media/dark.svg": "/Unoiatech-task/static/media/dark.a537386d88a2d000c0c316008e27ffc6.svg",
+    "main.615b4214.css.map": "/Unoiatech-task/static/css/main.615b4214.css.map",
+    "main.88fed07b.js.map": "/Unoiatech-task/static/js/main.88fed07b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.615b4214.css",
+    "static/js/main.88fed07b.js"
+  ]
+}
